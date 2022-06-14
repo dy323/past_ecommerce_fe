@@ -1,0 +1,82 @@
+//general
+$pure-color: #fff;
+$theme-color: #78c4cd;
+$font-color: rgba(48, 56, 65, 1);
+$font-xl: 20px;
+$font-lg: 18px;
+$font-normal: 16px;
+$font-sm: 14px;
+$font-xs: 12px;
+$theme-padding: 25rem;
+$xxl-theme-padding: 9rem;
+$xl-theme-padding: 4rem;
+$lg-theme-padding: 3rem;
+$md-theme-padding: 2rem;
+$sm-theme-padding: 1rem;
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == sm {
+        @media only screen and (max-width: 578px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == md {
+        @media only screen and (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == lg {
+        @media only screen and (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == xl {
+        @media only screen and (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == xxl {
+        @media only screen and (max-width: 1800px) {
+            @content;
+        }
+    }
+
+}
+
+body {
+    min-height: 100vh;
+}
+
+.content {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+//font
+@font-face {
+    font-family: "Alibaba PuHuiTi";
+    src: url("../styles/fonts/PuiHuiTi2/AlibabaPuHuiTi-2-55-Regular.ttf");
+}
+
+h5, 
+p, 
+span
+{
+    font-family: "Alibaba PuHuiTi";
+}

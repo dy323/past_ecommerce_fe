@@ -1,0 +1,12 @@
+{
+    "moduleResolution": "node",
+    "compilerOptions": {
+        "strictNullChecks": true,
+        "allowUnreachableCode": false,
+        "alwaysStrict": true,
+        "baseUrl": "src",
+        "target": "es6"
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "build", "public"]
+}
